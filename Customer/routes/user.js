@@ -19,11 +19,11 @@ router.get('/Signout',(req,res)=>{
   return UserManagement.Signout(req,res);
 })
 
-router.put('/Updatecustomer/:id',UserManagement.isSignedIn,(req,res)=>{
+router.put('/Updatecustomer/:id',(req,res)=>{
   return UserManagement.UpdateCustomer(req,res);
 })
 
-router.get('/ViewCustomer/:id',UserManagement.isSignedIn,(req,res)=>{
+router.get('/ViewCustomer/:id',(req,res)=>{
   return UserManagement.ViewCustomer(req,res);
 })
 
