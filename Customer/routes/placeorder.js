@@ -8,7 +8,7 @@ router.post('/PlaceOrder',isSignedIn,(req,res)=>{
     return order.PlaceOrder(req,res);
 })
 
-router.get('/ViewOrder/:id',isSignedIn,(req,res)=>{
+router.get('/ViewOrder/:id',(req,res)=>{
     return order.ViewOrder(req,res);
 })
 

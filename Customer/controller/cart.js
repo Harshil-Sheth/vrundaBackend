@@ -43,10 +43,10 @@ exports.ViewFromCart=function(req,res){
             if(error){
                 res.status(401).json(error);
             }
-            res.status(200).json({
-                status:'Success',
-                msg:response.rows
-            })
+            res.status(200).json(
+               
+                response.rows
+            )
         })
     })();
 
